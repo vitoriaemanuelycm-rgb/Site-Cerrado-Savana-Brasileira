@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F27405;
+    position: fixed;
+    width: 100%;
+    top:0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    min-height: 60px;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f2f2f0;
+  text-shadow: 1px 1px #000;
+  text-decoration: none;
+  padding-left: 20px;
+}
+.navbar ul{
+display: flex;
+list-style: none;
+gap: 5px;
+}
+.navbar a:link, .navbar a:visited{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #0d0d0d;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover, .navbar a:active{
+    background-color: #591202;
+}
+#hero{
+    background-image: url('../img/hero.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    text-align: center;
+    padding: 4px 0;
+    font-size: 3rem;
+}
+section{
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about{
+    background-color:#F28705 ;
+}
+#about p{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.6rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#gallery{
+    background-color: #F28705;
+    display: block;
+    text-align: center;
+}
+#gallery img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    display: inline-block;
+    margin: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow:  5px 5px 20px rgba(13,13,13,0.5);
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover{
+    transform: scale(1.05);
+}
+#curiosidade{
+    background-color: #F28705 ;
+}
+#curiosidade p{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.6rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#map{
+    padding: 0 !important;
+}
+#contact{
+    background-color: #F28705;
+    align-items: center;
+}
+
+#contact form{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#contact label{
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#contact input, #contact textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 8px;
+}
+#contact button{
+    background-color: #F2B705 ;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+#contact button:hover{
+    background-color: #fff;
+}
+
+footer{
+    background-color: #591202;
+    padding: 20px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    text-decoration: bold;
+}
